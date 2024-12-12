@@ -4,9 +4,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-import org.camunda.bpm.engine.AuthorizationService;
-import org.camunda.bpm.engine.authorization.Authorization;
-import org.camunda.bpm.engine.authorization.AuthorizationQuery;
+import org.cibseven.bpm.engine.AuthorizationService;
+import org.cibseven.bpm.engine.authorization.Authorization;
+import org.cibseven.bpm.engine.authorization.AuthorizationQuery;
 //import org.camunda.community.mockito.QueryMocks1;
 import org.camunda.community.mockito.QueryMocks;
 import org.junit.Ignore;

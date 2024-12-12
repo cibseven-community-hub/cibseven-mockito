@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
 import org.assertj.core.util.Lists;
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
 import org.camunda.community.mockito.CamundaMockito;
 import org.junit.Test;
 import org.junit.runner.RunWith;

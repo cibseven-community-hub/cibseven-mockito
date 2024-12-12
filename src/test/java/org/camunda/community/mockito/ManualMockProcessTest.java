@@ -1,6 +1,6 @@
 package org.camunda.community.mockito;
 
-import static org.camunda.bpm.engine.variable.Variables.createVariables;
+import static org.cibseven.bpm.engine.variable.Variables.createVariables;
 import static org.camunda.community.mockito.DelegateExpressions.getExecutionListenerMock;
 import static org.camunda.community.mockito.DelegateExpressions.getJavaDelegateMock;
 import static org.camunda.community.mockito.DelegateExpressions.getTaskListenerMock;
@@ -13,10 +13,10 @@ import static org.camunda.community.mockito.DelegateExpressions.verifyTaskListen
 import static org.camunda.community.mockito.MostUsefulProcessEngineConfiguration.mostUsefulProcessEngineConfiguration;
 import static org.junit.Assert.assertThat;
 
-import org.camunda.bpm.engine.ProcessEngineConfiguration;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
-import org.camunda.bpm.engine.test.Deployment;
-import org.camunda.bpm.engine.test.ProcessEngineRule;
+import org.cibseven.bpm.engine.ProcessEngineConfiguration;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.test.Deployment;
+import org.cibseven.bpm.engine.test.ProcessEngineRule;
 import org.camunda.community.mockito.mock.FluentJavaDelegateMock;
 import org.hamcrest.CoreMatchers;
 import org.junit.Rule;

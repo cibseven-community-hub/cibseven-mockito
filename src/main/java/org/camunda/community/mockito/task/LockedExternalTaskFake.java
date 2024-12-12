@@ -2,9 +2,9 @@ package org.camunda.community.mockito.task;
 
 import io.holunda.camunda.bpm.data.CamundaBpmData;
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.externaltask.LockedExternalTask;
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.externaltask.LockedExternalTask;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.variable.Variables;
 
 import java.time.Instant;
 import java.util.Date;

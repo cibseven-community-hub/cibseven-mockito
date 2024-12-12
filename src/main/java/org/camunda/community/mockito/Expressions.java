@@ -14,15 +14,15 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import org.camunda.bpm.engine.test.mock.Mocks;
+import org.cibseven.bpm.engine.test.mock.Mocks;
 import org.camunda.community.mockito.function.NameForType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * Util class that delegates to
- * {@link org.camunda.bpm.engine.test.mock.Mocks#register(String, Object)} and
- * {@link org.camunda.bpm.engine.test.mock.Mocks#get(Object)} in a type-safe
+ * {@link org.cibseven.bpm.engine.test.mock.Mocks#register(String, Object)} and
+ * {@link org.cibseven.bpm.engine.test.mock.Mocks#get(Object)} in a type-safe
  * way.
  * <p/>
  * When mocking JavaDelegate, ExecutionListener or TaskListener, use
@@ -58,7 +58,7 @@ public enum Expressions {
 
   /**
    * Registers mocks via
-   * {@link org.camunda.bpm.engine.test.mock.Mocks#register(String, Object)} for
+   * {@link org.cibseven.bpm.engine.test.mock.Mocks#register(String, Object)} for
    * all attributes with Named-types.
    *
    * @param instance instance who's fields are registered (maybe Junit test or jbehave
@@ -171,7 +171,7 @@ public enum Expressions {
 
   /**
    * Delegates to
-   * {@link org.camunda.bpm.engine.test.mock.Mocks#register(String, Object)}
+   * {@link org.cibseven.bpm.engine.test.mock.Mocks#register(String, Object)}
    *
    * @param name     the juel name for the registered instance
    * @param instance the instance to register
@@ -214,7 +214,7 @@ public enum Expressions {
   }
 
   /**
-   * @see org.camunda.bpm.engine.test.mock.Mocks#reset()
+   * @see org.cibseven.bpm.engine.test.mock.Mocks#reset()
    */
   public static void reset() {
     Mocks.reset();

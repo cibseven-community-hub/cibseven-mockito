@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.answer;
 
-import org.camunda.bpm.engine.delegate.VariableScope;
+import org.cibseven.bpm.engine.delegate.VariableScope;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
@@ -9,8 +9,8 @@ import org.mockito.stubbing.Answer;
  * argument of an execute() or notify() method and delegates to type safe call.
  *
  * @param <T>
- *          can be {@link org.camunda.bpm.engine.delegate.DelegateExecution} or
- *          {@link org.camunda.bpm.engine.delegate.DelegateTask}
+ *          can be {@link org.cibseven.bpm.engine.delegate.DelegateExecution} or
+ *          {@link org.cibseven.bpm.engine.delegate.DelegateTask}
  */
 abstract class AbstractAnswer<T extends VariableScope> implements Answer<Void> {
 

@@ -321,8 +321,8 @@ In order to test those, you can use the following helper:
 ```java
 package org.camunda.community.mockito;
 
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.runtime.MessageCorrelationBuilder;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.runtime.MessageCorrelationBuilder;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
@@ -366,7 +366,7 @@ possibilities to do so. If your code relies on direct access to Camunda Java API
 package org.camunda.community.mockito;
 
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.RuntimeService;
 import org.camunda.community.mockito.ServiceExpressions;
 import org.junit.Test;
 

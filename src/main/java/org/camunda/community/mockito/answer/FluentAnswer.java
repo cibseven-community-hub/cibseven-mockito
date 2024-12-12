@@ -2,7 +2,7 @@ package org.camunda.community.mockito.answer;
 
 import javax.annotation.Nonnull;
 
-import org.camunda.bpm.engine.query.Query;
+import org.cibseven.bpm.engine.query.Query;
 import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;

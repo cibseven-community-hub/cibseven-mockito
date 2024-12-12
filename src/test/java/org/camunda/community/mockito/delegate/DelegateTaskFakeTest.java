@@ -1,18 +1,18 @@
 package org.camunda.community.mockito.delegate;
 
 
-import org.camunda.bpm.engine.ProcessEngineServices;
-import org.camunda.bpm.engine.delegate.DelegateCaseExecution;
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.DelegateTask;
-import org.camunda.bpm.engine.delegate.TaskListener;
+import org.cibseven.bpm.engine.ProcessEngineServices;
+import org.cibseven.bpm.engine.delegate.DelegateCaseExecution;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.DelegateTask;
+import org.cibseven.bpm.engine.delegate.TaskListener;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.camunda.bpm.engine.delegate.TaskListener.EVENTNAME_CREATE;
-import static org.camunda.bpm.engine.task.IdentityLinkType.ASSIGNEE;
-import static org.camunda.bpm.engine.task.IdentityLinkType.CANDIDATE;
-import static org.camunda.bpm.engine.task.IdentityLinkType.OWNER;
+import static org.cibseven.bpm.engine.delegate.TaskListener.EVENTNAME_CREATE;
+import static org.cibseven.bpm.engine.task.IdentityLinkType.ASSIGNEE;
+import static org.cibseven.bpm.engine.task.IdentityLinkType.CANDIDATE;
+import static org.cibseven.bpm.engine.task.IdentityLinkType.OWNER;
 import static org.mockito.Mockito.mock;
 
 public class DelegateTaskFakeTest {

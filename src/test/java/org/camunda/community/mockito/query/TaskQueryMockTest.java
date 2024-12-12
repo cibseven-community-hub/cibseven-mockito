@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.TaskService;
-import org.camunda.bpm.engine.task.Task;
-import org.camunda.bpm.engine.task.TaskQuery;
+import org.cibseven.bpm.engine.TaskService;
+import org.cibseven.bpm.engine.task.Task;
+import org.cibseven.bpm.engine.task.TaskQuery;
 import org.camunda.community.mockito.CamundaMockito;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -9,11 +9,11 @@ import javax.annotation.Nonnull;
 import java.net.URL;
 
 import org.apache.commons.lang3.tuple.Pair;
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.DelegateTask;
-import org.camunda.bpm.engine.delegate.ExecutionListener;
-import org.camunda.bpm.engine.delegate.JavaDelegate;
-import org.camunda.bpm.engine.delegate.TaskListener;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.DelegateTask;
+import org.cibseven.bpm.engine.delegate.ExecutionListener;
+import org.cibseven.bpm.engine.delegate.JavaDelegate;
+import org.cibseven.bpm.engine.delegate.TaskListener;
 import org.camunda.community.mockito.function.ParseDelegateExpressions;
 import org.camunda.community.mockito.mock.FluentExecutionListenerMock;
 import org.camunda.community.mockito.mock.FluentJavaDelegateMock;

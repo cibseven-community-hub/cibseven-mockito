@@ -3,14 +3,14 @@ package org.camunda.community.mockito.delegate;
 
 import io.holunda.camunda.bpm.data.CamundaBpmData;
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.Variables;
-import org.camunda.bpm.engine.variable.value.StringValue;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.variable.value.StringValue;
 import org.camunda.community.mockito.CamundaMockito;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.camunda.bpm.engine.variable.Variables.stringValue;
+import static org.cibseven.bpm.engine.variable.Variables.stringValue;
 
 public class VariableScopeFakeTest {
 

@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.answer;
 
-import org.camunda.bpm.engine.query.Query;
+import org.cibseven.bpm.engine.query.Query;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

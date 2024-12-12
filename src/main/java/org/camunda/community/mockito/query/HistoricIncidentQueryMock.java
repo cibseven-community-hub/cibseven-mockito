@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.HistoryService;
-import org.camunda.bpm.engine.history.HistoricIncident;
-import org.camunda.bpm.engine.history.HistoricIncidentQuery;
+import org.cibseven.bpm.engine.HistoryService;
+import org.cibseven.bpm.engine.history.HistoricIncident;
+import org.cibseven.bpm.engine.history.HistoricIncidentQuery;
 
 public class HistoricIncidentQueryMock extends AbstractQueryMock<HistoricIncidentQueryMock, HistoricIncidentQuery, HistoricIncident, HistoryService> {
 

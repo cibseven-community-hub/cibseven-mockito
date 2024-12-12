@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.cases;
 
-import org.camunda.bpm.engine.CaseService;
-import org.camunda.bpm.engine.runtime.CaseInstance;
-import org.camunda.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.CaseService;
+import org.cibseven.bpm.engine.runtime.CaseInstance;
+import org.cibseven.bpm.engine.variable.VariableMap;
 import org.camunda.community.mockito.QueryMocks;
 import org.mockito.ArgumentMatchers;
 

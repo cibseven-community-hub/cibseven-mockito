@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.function.Supplier;
 
-import org.camunda.bpm.engine.query.Query;
+import org.cibseven.bpm.engine.query.Query;
 import org.camunda.community.mockito.answer.FluentAnswer;
 
 

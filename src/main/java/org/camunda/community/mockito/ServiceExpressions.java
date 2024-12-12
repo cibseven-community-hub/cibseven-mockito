@@ -1,9 +1,9 @@
 package org.camunda.community.mockito;
 
-import org.camunda.bpm.engine.CaseService;
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.TaskService;
-import org.camunda.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.CaseService;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.TaskService;
+import org.cibseven.bpm.engine.variable.VariableMap;
 import org.camunda.community.mockito.service.CaseServiceStubBuilder;
 import org.camunda.community.mockito.service.RuntimeServiceStubBuilder;
 import org.camunda.community.mockito.service.TaskServiceStubBuilder;

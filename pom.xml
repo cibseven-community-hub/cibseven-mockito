@@ -1,12 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+<!--
   <parent>
     <groupId>org.camunda.community</groupId>
     <artifactId>community-hub-release-parent</artifactId>
     <version>1.4.4</version>
     <relativePath />
   </parent>
+-->
 
   <groupId>org.camunda.community.mockito</groupId>
   <artifactId>camunda-platform-7-mockito</artifactId>
@@ -18,8 +20,8 @@
     <version.java>17</version.java>
     <java.version>${version.java}</java.version>
 
-    <camunda.version>7.22.0</camunda.version>
-    <camunda-bpm-data.version>1.6.0</camunda-bpm-data.version>
+    <cibseven.version>1.1.0</cibseven.version>
+    <camunda-bpm-data.version>1.6.1-SNAPSHOT</camunda-bpm-data.version>
 
     <commons-lang3.version>3.17.0</commons-lang3.version>
     <slf4j.version>2.0.16</slf4j.version>
@@ -43,9 +45,9 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.camunda.bpm</groupId>
-        <artifactId>camunda-bom</artifactId>
-        <version>${camunda.version}</version>
+        <groupId>org.cibseven.bpm</groupId>
+        <artifactId>cibseven-bom</artifactId>
+        <version>${cibseven.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -54,8 +56,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
-      <artifactId>camunda-engine</artifactId>
+      <groupId>org.cibseven.bpm</groupId>
+      <artifactId>cibseven-engine</artifactId>
       <scope>provided</scope>
     </dependency>
 

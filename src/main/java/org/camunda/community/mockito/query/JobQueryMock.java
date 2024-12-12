@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.ManagementService;
-import org.camunda.bpm.engine.runtime.Job;
-import org.camunda.bpm.engine.runtime.JobQuery;
+import org.cibseven.bpm.engine.ManagementService;
+import org.cibseven.bpm.engine.runtime.Job;
+import org.cibseven.bpm.engine.runtime.JobQuery;
 
 public class JobQueryMock extends AbstractQueryMock<JobQueryMock, JobQuery, Job, ManagementService> {
 

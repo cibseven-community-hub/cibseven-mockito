@@ -1,10 +1,10 @@
 package org.camunda.community.mockito.service;
 
 import org.assertj.core.util.Lists;
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.task.Task;
-import org.camunda.bpm.engine.variable.Variables;
-import org.camunda.bpm.engine.variable.value.StringValue;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.task.Task;
+import org.cibseven.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.variable.value.StringValue;
 import org.camunda.community.mockito.task.TaskFake;
 import org.junit.Test;
 

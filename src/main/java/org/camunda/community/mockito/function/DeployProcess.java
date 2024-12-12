@@ -1,10 +1,10 @@
 package org.camunda.community.mockito.function;
 
-import org.camunda.bpm.engine.ProcessEngineServices;
-import org.camunda.bpm.engine.RepositoryService;
-import org.camunda.bpm.engine.repository.Deployment;
-import org.camunda.bpm.engine.repository.DeploymentBuilder;
-import org.camunda.bpm.model.bpmn.BpmnModelInstance;
+import org.cibseven.bpm.engine.ProcessEngineServices;
+import org.cibseven.bpm.engine.RepositoryService;
+import org.cibseven.bpm.engine.repository.Deployment;
+import org.cibseven.bpm.engine.repository.DeploymentBuilder;
+import org.cibseven.bpm.model.bpmn.BpmnModelInstance;
 
 import java.util.Arrays;
 import java.util.function.BiFunction;

@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.AuthorizationService;
-import org.camunda.bpm.engine.authorization.Authorization;
-import org.camunda.bpm.engine.authorization.AuthorizationQuery;
+import org.cibseven.bpm.engine.AuthorizationService;
+import org.cibseven.bpm.engine.authorization.Authorization;
+import org.cibseven.bpm.engine.authorization.AuthorizationQuery;
 
 public class AuthorizationQueryMock extends AbstractQueryMock<AuthorizationQueryMock, AuthorizationQuery, Authorization, AuthorizationService> {
 

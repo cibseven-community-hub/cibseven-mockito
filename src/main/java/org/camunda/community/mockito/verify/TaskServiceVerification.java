@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.verify;
 
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.TaskService;
-import org.camunda.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.TaskService;
+import org.cibseven.bpm.engine.variable.VariableMap;
 import org.mockito.Mockito;
 import org.mockito.verification.VerificationMode;
 

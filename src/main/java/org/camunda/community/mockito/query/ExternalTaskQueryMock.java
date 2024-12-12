@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.ExternalTaskService;
-import org.camunda.bpm.engine.externaltask.ExternalTask;
-import org.camunda.bpm.engine.externaltask.ExternalTaskQuery;
+import org.cibseven.bpm.engine.ExternalTaskService;
+import org.cibseven.bpm.engine.externaltask.ExternalTask;
+import org.cibseven.bpm.engine.externaltask.ExternalTaskQuery;
 
 public class ExternalTaskQueryMock extends AbstractQueryMock<ExternalTaskQueryMock, ExternalTaskQuery, ExternalTask, ExternalTaskService> {
 

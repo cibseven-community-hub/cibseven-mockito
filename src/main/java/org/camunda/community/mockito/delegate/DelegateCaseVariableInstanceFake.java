@@ -1,13 +1,13 @@
 package org.camunda.community.mockito.delegate;
 
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.ProcessEngineServices;
-import org.camunda.bpm.engine.delegate.CaseVariableListener;
-import org.camunda.bpm.engine.delegate.DelegateCaseExecution;
-import org.camunda.bpm.engine.delegate.DelegateCaseVariableInstance;
-import org.camunda.bpm.engine.variable.impl.value.AbstractTypedValue;
-import org.camunda.bpm.engine.variable.type.ValueType;
-import org.camunda.bpm.engine.variable.value.TypedValue;
+import org.cibseven.bpm.engine.ProcessEngine;
+import org.cibseven.bpm.engine.ProcessEngineServices;
+import org.cibseven.bpm.engine.delegate.CaseVariableListener;
+import org.cibseven.bpm.engine.delegate.DelegateCaseExecution;
+import org.cibseven.bpm.engine.delegate.DelegateCaseVariableInstance;
+import org.cibseven.bpm.engine.variable.impl.value.AbstractTypedValue;
+import org.cibseven.bpm.engine.variable.type.ValueType;
+import org.cibseven.bpm.engine.variable.value.TypedValue;
 
 import java.util.Optional;
 

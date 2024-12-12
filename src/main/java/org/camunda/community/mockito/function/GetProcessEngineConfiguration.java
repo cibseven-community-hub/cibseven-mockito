@@ -3,9 +3,9 @@ package org.camunda.community.mockito.function;
 
 import java.util.function.Function;
 
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.ProcessEngineConfiguration;
-import org.camunda.bpm.engine.impl.ProcessEngineImpl;
+import org.cibseven.bpm.engine.ProcessEngine;
+import org.cibseven.bpm.engine.ProcessEngineConfiguration;
+import org.cibseven.bpm.engine.impl.ProcessEngineImpl;
 
 /**
  * Hides the nasty "getConfiguration from given Engine Hack" in an easy to use

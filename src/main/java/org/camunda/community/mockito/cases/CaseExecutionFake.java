@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.cases;
 
-import org.camunda.bpm.engine.runtime.CaseExecution;
+import org.cibseven.bpm.engine.runtime.CaseExecution;
 
 public class CaseExecutionFake implements CaseExecution {
   private final String id;

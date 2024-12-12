@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.HistoryService;
-import org.camunda.bpm.engine.history.UserOperationLogEntry;
-import org.camunda.bpm.engine.history.UserOperationLogQuery;
+import org.cibseven.bpm.engine.HistoryService;
+import org.cibseven.bpm.engine.history.UserOperationLogEntry;
+import org.cibseven.bpm.engine.history.UserOperationLogQuery;
 
 public class UserOperationLogQueryMock extends AbstractQueryMock<UserOperationLogQueryMock, UserOperationLogQuery, UserOperationLogEntry, HistoryService> {
 

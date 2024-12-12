@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.RepositoryService;
-import org.camunda.bpm.engine.repository.Deployment;
-import org.camunda.bpm.engine.repository.DeploymentQuery;
+import org.cibseven.bpm.engine.RepositoryService;
+import org.cibseven.bpm.engine.repository.Deployment;
+import org.cibseven.bpm.engine.repository.DeploymentQuery;
 
 public class DeploymentQueryMock extends AbstractQueryMock<DeploymentQueryMock, DeploymentQuery, Deployment, RepositoryService> {
 

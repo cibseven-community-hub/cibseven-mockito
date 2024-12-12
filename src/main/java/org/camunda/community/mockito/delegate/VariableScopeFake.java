@@ -1,9 +1,9 @@
 package org.camunda.community.mockito.delegate;
 
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.delegate.VariableScope;
-import org.camunda.bpm.engine.impl.core.variable.CoreVariableInstance;
-import org.camunda.bpm.engine.impl.core.variable.scope.*;
+import org.cibseven.bpm.engine.delegate.VariableScope;
+import org.cibseven.bpm.engine.impl.core.variable.CoreVariableInstance;
+import org.cibseven.bpm.engine.impl.core.variable.scope.*;
 
 import java.util.Collections;
 import java.util.List;

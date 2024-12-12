@@ -1,10 +1,10 @@
 package org.camunda.community.mockito.mock;
 
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.delegate.BpmnError;
-import org.camunda.bpm.engine.delegate.VariableScope;
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.delegate.BpmnError;
+import org.cibseven.bpm.engine.delegate.VariableScope;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.variable.Variables;
 import org.mockito.Mockito;
 
 import java.util.ArrayDeque;

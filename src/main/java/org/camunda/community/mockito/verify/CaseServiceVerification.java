@@ -1,7 +1,7 @@
 package org.camunda.community.mockito.verify;
 
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.CaseService;
+import org.cibseven.bpm.engine.CaseService;
 import org.mockito.Mockito;
 import org.mockito.verification.VerificationMode;
 

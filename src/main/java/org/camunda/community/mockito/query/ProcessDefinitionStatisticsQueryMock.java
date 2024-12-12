@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.ManagementService;
-import org.camunda.bpm.engine.management.ProcessDefinitionStatistics;
-import org.camunda.bpm.engine.management.ProcessDefinitionStatisticsQuery;
+import org.cibseven.bpm.engine.ManagementService;
+import org.cibseven.bpm.engine.management.ProcessDefinitionStatistics;
+import org.cibseven.bpm.engine.management.ProcessDefinitionStatisticsQuery;
 
 public class ProcessDefinitionStatisticsQueryMock extends AbstractQueryMock<ProcessDefinitionStatisticsQueryMock, ProcessDefinitionStatisticsQuery, ProcessDefinitionStatistics, ManagementService> {
 

@@ -3,7 +3,7 @@ package org.camunda.community.mockito.verify;
 import static org.mockito.Mockito.times;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
 import org.camunda.community.mockito.DelegateExpressions;
 import org.camunda.community.mockito.mock.FluentJavaDelegateMock;
 import org.junit.Before;

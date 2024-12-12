@@ -1,11 +1,11 @@
 package org.camunda.community.mockito;
 
 
-import org.camunda.bpm.engine.ProcessEngineConfiguration;
-import org.camunda.bpm.engine.impl.bpmn.parser.BpmnParseListener;
-import org.camunda.bpm.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration;
-import org.camunda.bpm.engine.impl.jobexecutor.JobHandler;
-import org.camunda.bpm.engine.test.mock.MockExpressionManager;
+import org.cibseven.bpm.engine.ProcessEngineConfiguration;
+import org.cibseven.bpm.engine.impl.bpmn.parser.BpmnParseListener;
+import org.cibseven.bpm.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration;
+import org.cibseven.bpm.engine.impl.jobexecutor.JobHandler;
+import org.cibseven.bpm.engine.test.mock.MockExpressionManager;
 
 import java.util.ArrayList;
 import java.util.Objects;

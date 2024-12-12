@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.delegate;
 
-import org.camunda.bpm.engine.runtime.Incident;
+import org.cibseven.bpm.engine.runtime.Incident;
 
 import java.util.Date;
 import java.util.UUID;

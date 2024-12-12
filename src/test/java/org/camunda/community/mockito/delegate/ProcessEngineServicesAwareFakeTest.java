@@ -1,7 +1,7 @@
 package org.camunda.community.mockito.delegate;
 
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.ProcessEngineServices;
+import org.cibseven.bpm.engine.ProcessEngine;
+import org.cibseven.bpm.engine.ProcessEngineServices;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

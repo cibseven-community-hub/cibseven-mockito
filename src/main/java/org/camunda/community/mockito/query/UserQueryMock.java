@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.IdentityService;
-import org.camunda.bpm.engine.identity.User;
-import org.camunda.bpm.engine.identity.UserQuery;
+import org.cibseven.bpm.engine.IdentityService;
+import org.cibseven.bpm.engine.identity.User;
+import org.cibseven.bpm.engine.identity.UserQuery;
 
 public class UserQueryMock extends AbstractQueryMock<UserQueryMock, UserQuery, User, IdentityService> {
 

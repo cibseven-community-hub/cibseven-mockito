@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.FilterService;
-import org.camunda.bpm.engine.filter.Filter;
-import org.camunda.bpm.engine.filter.FilterQuery;
+import org.cibseven.bpm.engine.FilterService;
+import org.cibseven.bpm.engine.filter.Filter;
+import org.cibseven.bpm.engine.filter.FilterQuery;
 
 public class FilterQueryMock extends AbstractQueryMock<FilterQueryMock, FilterQuery, Filter, FilterService> {
 

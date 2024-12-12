@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.typedvalues;
 
 
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.variable.Variables;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

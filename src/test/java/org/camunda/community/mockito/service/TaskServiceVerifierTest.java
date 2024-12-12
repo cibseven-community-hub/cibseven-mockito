@@ -2,8 +2,8 @@ package org.camunda.community.mockito.service;
 
 import io.holunda.camunda.bpm.data.CamundaBpmData;
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.TaskService;
-import org.camunda.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.TaskService;
+import org.cibseven.bpm.engine.variable.VariableMap;
 import org.camunda.community.mockito.ServiceExpressions;
 import org.camunda.community.mockito.verify.TaskServiceVerification;
 import org.junit.Before;

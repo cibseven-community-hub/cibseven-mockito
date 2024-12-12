@@ -1,7 +1,7 @@
 package org.camunda.community.mockito.cases;
 
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.variable.Variables;
 
 public class CaseInstanceFakeBuilder {
   private boolean disabled = false;

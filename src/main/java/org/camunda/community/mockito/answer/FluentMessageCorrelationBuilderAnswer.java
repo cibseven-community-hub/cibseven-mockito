@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.answer;
 
-import org.camunda.bpm.engine.runtime.MessageCorrelationBuilder;
+import org.cibseven.bpm.engine.runtime.MessageCorrelationBuilder;
 import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;

@@ -5,7 +5,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-import org.camunda.bpm.engine.delegate.VariableScope;
+import org.cibseven.bpm.engine.delegate.VariableScope;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

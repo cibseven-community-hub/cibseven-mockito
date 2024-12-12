@@ -1,8 +1,8 @@
 package org.camunda.community.mockito;
 
-import org.camunda.bpm.engine.repository.DeploymentBuilder;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
-import org.camunda.bpm.engine.test.ProcessEngineRule;
+import org.cibseven.bpm.engine.repository.DeploymentBuilder;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.test.ProcessEngineRule;
 import org.camunda.community.mockito.process.CallActivityMock;
 import org.junit.Before;
 import org.junit.Rule;

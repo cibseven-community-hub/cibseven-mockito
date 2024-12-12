@@ -2,8 +2,8 @@ package org.camunda.community.mockito.verify;
 
 import static org.mockito.Mockito.verify;
 
-import org.camunda.bpm.engine.delegate.DelegateTask;
-import org.camunda.bpm.engine.delegate.TaskListener;
+import org.cibseven.bpm.engine.delegate.DelegateTask;
+import org.cibseven.bpm.engine.delegate.TaskListener;
 import org.mockito.verification.VerificationMode;
 
 public class TaskListenerVerification extends AbstractMockitoVerification<TaskListener, DelegateTask> {

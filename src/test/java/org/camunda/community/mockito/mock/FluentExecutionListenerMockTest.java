@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.mock;
 
-import org.camunda.bpm.engine.delegate.BpmnError;
+import org.cibseven.bpm.engine.delegate.BpmnError;
 import org.camunda.community.mockito.DelegateExpressions;
 import org.camunda.community.mockito.delegate.DelegateExecutionFake;
 import org.junit.Test;

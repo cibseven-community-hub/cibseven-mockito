@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.service;
 
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.value.TypedValue;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.variable.value.TypedValue;
 
 import java.util.Collection;
 import java.util.Map;

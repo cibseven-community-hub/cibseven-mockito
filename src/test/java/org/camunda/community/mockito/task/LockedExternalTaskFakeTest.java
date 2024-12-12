@@ -3,7 +3,7 @@ package org.camunda.community.mockito.task;
 import io.holunda.camunda.bpm.data.CamundaBpmData;
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
 import io.holunda.camunda.bpm.data.reader.VariableReader;
-import org.camunda.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.variable.Variables;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

@@ -2,8 +2,8 @@ package org.camunda.community.mockito.spring;
 
 import static org.assertj.core.api.Assertions.fail;
 
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.ExecutionListener;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.ExecutionListener;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 

@@ -1,22 +1,22 @@
 package org.camunda.community.mockito;
 
 
-import org.camunda.bpm.engine.AuthorizationService;
-import org.camunda.bpm.engine.CaseService;
-import org.camunda.bpm.engine.ExternalTaskService;
-import org.camunda.bpm.engine.FilterService;
-import org.camunda.bpm.engine.HistoryService;
-import org.camunda.bpm.engine.IdentityService;
-import org.camunda.bpm.engine.ManagementService;
-import org.camunda.bpm.engine.RepositoryService;
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.TaskService;
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.DelegateTask;
-import org.camunda.bpm.engine.delegate.ExecutionListener;
-import org.camunda.bpm.engine.delegate.JavaDelegate;
-import org.camunda.bpm.engine.delegate.TaskListener;
-import org.camunda.bpm.engine.test.mock.Mocks;
+import org.cibseven.bpm.engine.AuthorizationService;
+import org.cibseven.bpm.engine.CaseService;
+import org.cibseven.bpm.engine.ExternalTaskService;
+import org.cibseven.bpm.engine.FilterService;
+import org.cibseven.bpm.engine.HistoryService;
+import org.cibseven.bpm.engine.IdentityService;
+import org.cibseven.bpm.engine.ManagementService;
+import org.cibseven.bpm.engine.RepositoryService;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.TaskService;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.DelegateTask;
+import org.cibseven.bpm.engine.delegate.ExecutionListener;
+import org.cibseven.bpm.engine.delegate.JavaDelegate;
+import org.cibseven.bpm.engine.delegate.TaskListener;
+import org.cibseven.bpm.engine.test.mock.Mocks;
 import org.camunda.community.mockito.delegate.DelegateCaseExecutionFake;
 import org.camunda.community.mockito.delegate.DelegateCaseVariableInstanceFake;
 import org.camunda.community.mockito.delegate.DelegateExecutionFake;
@@ -328,7 +328,7 @@ public enum CamundaMockito {
 
   /**
    * Registers mocks via
-   * {@link org.camunda.bpm.engine.test.mock.Mocks#register(String, Object)} for
+   * {@link org.cibseven.bpm.engine.test.mock.Mocks#register(String, Object)} for
    * all attributes with Named-types.
    *
    * @param instance instance who's fields are registered (maybe Junit test or jbehave
@@ -425,7 +425,7 @@ public enum CamundaMockito {
 
   /**
    * Delegates to
-   * {@link org.camunda.bpm.engine.test.mock.Mocks#register(String, Object)}
+   * {@link org.cibseven.bpm.engine.test.mock.Mocks#register(String, Object)}
    *
    * @param name     the juel name for the registered instance
    * @param instance the instance to register
@@ -453,7 +453,7 @@ public enum CamundaMockito {
   }
 
   /**
-   * @see org.camunda.bpm.engine.test.mock.Mocks#reset()
+   * @see org.cibseven.bpm.engine.test.mock.Mocks#reset()
    */
   public static void reset() {
     Mocks.reset();

@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.CaseService;
-import org.camunda.bpm.engine.runtime.CaseInstance;
-import org.camunda.bpm.engine.runtime.CaseInstanceQuery;
+import org.cibseven.bpm.engine.CaseService;
+import org.cibseven.bpm.engine.runtime.CaseInstance;
+import org.cibseven.bpm.engine.runtime.CaseInstanceQuery;
 
 public class CaseInstanceQueryMock extends AbstractQueryMock<CaseInstanceQueryMock, CaseInstanceQuery, CaseInstance, CaseService> {
 

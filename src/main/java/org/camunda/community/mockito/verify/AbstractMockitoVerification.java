@@ -24,14 +24,14 @@ public abstract class AbstractMockitoVerification<M, P> implements MockitoVerifi
    *
    * @param mock
    *          the wrapped mock (has to be either
-   *          {@link org.camunda.bpm.engine.delegate.JavaDelegate},
-   *          {@link org.camunda.bpm.engine.delegate.TaskListener} or
-   *          {@link org.camunda.bpm.engine.delegate.ExecutionListener}.
+   *          {@link org.cibseven.bpm.engine.delegate.JavaDelegate},
+   *          {@link org.cibseven.bpm.engine.delegate.TaskListener} or
+   *          {@link org.cibseven.bpm.engine.delegate.ExecutionListener}.
    * @param parameterType
    *          the parameter the main method (execute() or notify() expects, one
    *          of either
-   *          {@link org.camunda.bpm.engine.delegate.DelegateExecution} or
-   *          {@link org.camunda.bpm.engine.delegate.DelegateTask}.
+   *          {@link org.cibseven.bpm.engine.delegate.DelegateExecution} or
+   *          {@link org.cibseven.bpm.engine.delegate.DelegateTask}.
    */
   public AbstractMockitoVerification(final M mock, final Class<P> parameterType) {
     this.mock = mock;

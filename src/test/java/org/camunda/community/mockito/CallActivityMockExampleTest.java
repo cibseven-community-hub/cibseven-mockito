@@ -1,15 +1,15 @@
 package org.camunda.community.mockito;
 
-import org.camunda.bpm.engine.history.HistoricProcessInstance;
-import org.camunda.bpm.engine.impl.persistence.entity.ProcessInstanceWithVariablesImpl;
-import org.camunda.bpm.engine.impl.persistence.entity.TimerEntity;
-import org.camunda.bpm.engine.runtime.EventSubscription;
-import org.camunda.bpm.engine.runtime.Job;
-import org.camunda.bpm.engine.runtime.JobQuery;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
-import org.camunda.bpm.engine.test.ProcessEngineRule;
-import org.camunda.bpm.model.bpmn.Bpmn;
-import org.camunda.bpm.model.bpmn.BpmnModelInstance;
+import org.cibseven.bpm.engine.history.HistoricProcessInstance;
+import org.cibseven.bpm.engine.impl.persistence.entity.ProcessInstanceWithVariablesImpl;
+import org.cibseven.bpm.engine.impl.persistence.entity.TimerEntity;
+import org.cibseven.bpm.engine.runtime.EventSubscription;
+import org.cibseven.bpm.engine.runtime.Job;
+import org.cibseven.bpm.engine.runtime.JobQuery;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.test.ProcessEngineRule;
+import org.cibseven.bpm.model.bpmn.Bpmn;
+import org.cibseven.bpm.model.bpmn.BpmnModelInstance;
 import org.camunda.community.mockito.function.DeployProcess;
 import org.junit.Before;
 import org.junit.Rule;
@@ -21,8 +21,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import static org.camunda.bpm.engine.variable.Variables.createVariables;
-import static org.camunda.bpm.model.xml.test.assertions.ModelAssertions.assertThat;
+import static org.cibseven.bpm.engine.variable.Variables.createVariables;
+import static org.cibseven.bpm.model.xml.test.assertions.ModelAssertions.assertThat;
 import static org.camunda.community.mockito.MostUsefulProcessEngineConfiguration.mostUsefulProcessEngineConfiguration;
 import static org.camunda.community.mockito.ProcessExpressions.registerCallActivityMock;
 import static org.junit.Assert.assertEquals;

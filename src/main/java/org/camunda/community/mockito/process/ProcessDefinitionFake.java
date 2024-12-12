@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.process;
 
-import org.camunda.bpm.engine.repository.ProcessDefinition;
+import org.cibseven.bpm.engine.repository.ProcessDefinition;
 
 public class ProcessDefinitionFake implements ProcessDefinition {
 

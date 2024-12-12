@@ -1,9 +1,9 @@
 package org.camunda.community.mockito.typedvalues;
 
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.engine.variable.Variables;
-import org.camunda.bpm.engine.variable.context.VariableContext;
-import org.camunda.bpm.engine.variable.value.TypedValue;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.variable.Variables;
+import org.cibseven.bpm.engine.variable.context.VariableContext;
+import org.cibseven.bpm.engine.variable.value.TypedValue;
 
 import java.util.Set;
 import java.util.function.Supplier;

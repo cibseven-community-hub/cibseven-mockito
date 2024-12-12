@@ -1,7 +1,7 @@
 package org.camunda.community.mockito.delegate;
 
-import org.camunda.bpm.engine.ProcessEngineServices;
-import org.camunda.bpm.engine.impl.cmmn.execution.CaseExecutionState;
+import org.cibseven.bpm.engine.ProcessEngineServices;
+import org.cibseven.bpm.engine.impl.cmmn.execution.CaseExecutionState;
 import org.camunda.community.mockito.CamundaMockito;
 import org.junit.Test;
 

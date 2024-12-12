@@ -1,7 +1,7 @@
 package org.camunda.community.mockito.message;
 
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.runtime.MessageCorrelationBuilder;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.runtime.MessageCorrelationBuilder;
 import org.camunda.community.mockito.answer.FluentMessageCorrelationBuilderAnswer;
 
 import java.util.function.Supplier;

@@ -1,6 +1,6 @@
 package org.camunda.community.mockito.process;
 
-import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
 
 public class ProcessInstanceFake implements ProcessInstance {
 

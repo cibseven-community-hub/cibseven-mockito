@@ -1,17 +1,17 @@
 package org.camunda.community.mockito.process;
 
-import org.camunda.bpm.engine.ProcessEngineServices;
-import org.camunda.bpm.engine.RepositoryService;
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.JavaDelegate;
-import org.camunda.bpm.engine.repository.Deployment;
-import org.camunda.bpm.engine.variable.VariableMap;
-import org.camunda.bpm.model.bpmn.BpmnModelInstance;
+import org.cibseven.bpm.engine.ProcessEngineServices;
+import org.cibseven.bpm.engine.RepositoryService;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.JavaDelegate;
+import org.cibseven.bpm.engine.repository.Deployment;
+import org.cibseven.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.model.bpmn.BpmnModelInstance;
 import org.camunda.community.mockito.function.DeployProcess;
-import org.camunda.bpm.model.bpmn.Bpmn;
-import org.camunda.bpm.model.bpmn.builder.AbstractFlowNodeBuilder;
-import org.camunda.bpm.model.bpmn.builder.EndEventBuilder;
-import org.camunda.bpm.model.bpmn.builder.ProcessBuilder;
+import org.cibseven.bpm.model.bpmn.Bpmn;
+import org.cibseven.bpm.model.bpmn.builder.AbstractFlowNodeBuilder;
+import org.cibseven.bpm.model.bpmn.builder.EndEventBuilder;
+import org.cibseven.bpm.model.bpmn.builder.ProcessBuilder;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -19,7 +19,7 @@ import java.util.Date;
 import java.util.UUID;
 import java.util.function.Consumer;
 
-import static org.camunda.bpm.engine.variable.Variables.createVariables;
+import static org.cibseven.bpm.engine.variable.Variables.createVariables;
 import static org.camunda.community.mockito.Expressions.registerInstance;
 
 public class CallActivityMock implements DeployProcess.BpmnModelInstanceResource {

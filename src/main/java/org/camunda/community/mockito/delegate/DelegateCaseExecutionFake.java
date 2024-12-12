@@ -1,9 +1,9 @@
 package org.camunda.community.mockito.delegate;
 
-import org.camunda.bpm.engine.delegate.DelegateCaseExecution;
-import org.camunda.bpm.engine.impl.cmmn.execution.CaseExecutionState;
-import org.camunda.bpm.model.cmmn.CmmnModelInstance;
-import org.camunda.bpm.model.cmmn.instance.CmmnElement;
+import org.cibseven.bpm.engine.delegate.DelegateCaseExecution;
+import org.cibseven.bpm.engine.impl.cmmn.execution.CaseExecutionState;
+import org.cibseven.bpm.model.cmmn.CmmnModelInstance;
+import org.cibseven.bpm.model.cmmn.instance.CmmnElement;
 
 @SuppressWarnings({"WeakerAccess","UnusedReturnValue", "unused"})
 public class DelegateCaseExecutionFake extends DelegateFake<DelegateCaseExecutionFake> implements DelegateCaseExecution {

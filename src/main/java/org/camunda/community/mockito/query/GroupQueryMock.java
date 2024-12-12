@@ -1,8 +1,8 @@
 package org.camunda.community.mockito.query;
 
-import org.camunda.bpm.engine.IdentityService;
-import org.camunda.bpm.engine.identity.Group;
-import org.camunda.bpm.engine.identity.GroupQuery;
+import org.cibseven.bpm.engine.IdentityService;
+import org.cibseven.bpm.engine.identity.Group;
+import org.cibseven.bpm.engine.identity.GroupQuery;
 
 public class GroupQueryMock extends AbstractQueryMock<GroupQueryMock, GroupQuery, Group, IdentityService> {
 

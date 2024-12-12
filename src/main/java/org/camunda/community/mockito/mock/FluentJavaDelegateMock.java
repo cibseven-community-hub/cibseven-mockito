@@ -2,10 +2,10 @@ package org.camunda.community.mockito.mock;
 
 import static org.mockito.Mockito.mock;
 
-import org.camunda.bpm.engine.delegate.BpmnError;
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.JavaDelegate;
-import org.camunda.bpm.engine.variable.VariableMap;
+import org.cibseven.bpm.engine.delegate.BpmnError;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.JavaDelegate;
+import org.cibseven.bpm.engine.variable.VariableMap;
 import org.camunda.community.mockito.answer.JavaDelegateAnswer;
 import org.mockito.Mockito;
 

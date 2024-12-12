@@ -1,13 +1,13 @@
 package org.camunda.community.mockito.cases;
 
 
-import org.camunda.bpm.engine.impl.cmmn.entity.runtime.CaseExecutionEntity;
-import org.camunda.bpm.engine.impl.cmmn.execution.CaseExecutionState;
+import org.cibseven.bpm.engine.impl.cmmn.entity.runtime.CaseExecutionEntity;
+import org.cibseven.bpm.engine.impl.cmmn.execution.CaseExecutionState;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.camunda.bpm.engine.impl.cmmn.execution.CaseExecutionState.DISABLED;
-import static org.camunda.bpm.engine.impl.cmmn.execution.CaseExecutionState.ENABLED;
+import static org.cibseven.bpm.engine.impl.cmmn.execution.CaseExecutionState.DISABLED;
+import static org.cibseven.bpm.engine.impl.cmmn.execution.CaseExecutionState.ENABLED;
 
 public class CaseExecutionEntityFake extends CaseExecutionEntity {
 

@@ -1,9 +1,9 @@
 package org.camunda.community.mockito.task;
 
 import org.apache.commons.lang3.NotImplementedException;
-import org.camunda.bpm.engine.form.CamundaFormRef;
-import org.camunda.bpm.engine.task.DelegationState;
-import org.camunda.bpm.engine.task.Task;
+import org.cibseven.bpm.engine.form.CamundaFormRef;
+import org.cibseven.bpm.engine.task.DelegationState;
+import org.cibseven.bpm.engine.task.Task;
 
 import java.util.Date;
 

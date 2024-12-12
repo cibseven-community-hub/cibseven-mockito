@@ -2,8 +2,8 @@ package org.camunda.community.mockito.verify;
 
 import static org.mockito.Mockito.verify;
 
-import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.ExecutionListener;
+import org.cibseven.bpm.engine.delegate.DelegateExecution;
+import org.cibseven.bpm.engine.delegate.ExecutionListener;
 import org.mockito.verification.VerificationMode;
 
 public class ExecutionListenerVerification extends AbstractMockitoVerification<ExecutionListener, DelegateExecution> {

@@ -1,7 +1,7 @@
 package org.camunda.community.mockito.service;
 
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.RuntimeService;
 import org.camunda.community.mockito.ServiceExpressions;
 import org.camunda.community.mockito.verify.RuntimeServiceVerification;
 import org.junit.Test;
