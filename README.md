@@ -323,6 +323,7 @@ package org.camunda.community.mockito;
 
 import org.cibseven.bpm.engine.RuntimeService;
 import org.cibseven.bpm.engine.runtime.MessageCorrelationBuilder;
+import org.cibseven.community.mockito.ProcessExpressions;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
@@ -367,7 +368,7 @@ package org.camunda.community.mockito;
 
 import io.holunda.camunda.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.RuntimeService;
-import org.camunda.community.mockito.ServiceExpressions;
+import org.cibseven.community.mockito.ServiceExpressions;
 import org.junit.Test;
 
 import java.util.UUID;
@@ -389,9 +390,9 @@ public class RuntimeServiceAwareServiceTest {
     final RuntimeService runtimeService = mock(RuntimeService.class);
     // stub access
     ServiceExpressions.runtimeServiceVariableStubBuilder(runtimeService)
-                      .defineAndInitializeLocal(ORDER_ID, "initial-Value")
-                      .define(ORDER_FLAG)
-                      .build();
+      .defineAndInitializeLocal(ORDER_ID, "initial-Value")
+      .define(ORDER_FLAG)
+      .build();
     // setup service
     final RuntimeServiceAwareService serviceUnderTest = new RuntimeServiceAwareService(runtimeService);
     // setup verifier
@@ -411,7 +412,7 @@ public class RuntimeServiceAwareServiceTest {
     assertThat(orderFlag).isEqualTo(true);
 
     // verify service access
-    verifier.verifySetLocal(ORDER_ID, "4712", executionId );
+    verifier.verifySetLocal(ORDER_ID, "4712", executionId);
     verifier.verifyGetLocal(ORDER_ID, executionId);
     verifier.verifyGetVariables(executionId, times(2));
     verifier.verifySet(ORDER_FLAG, true, executionId);
