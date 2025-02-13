@@ -310,7 +310,7 @@ class MyCorrelator {
 In order to test those, you can use the following helper:
 
 ```java
-package org.camunda.community.mockito;
+package org.cibseven.community.mockito;
 
 import org.cibseven.bpm.engine.RuntimeService;
 import org.cibseven.bpm.engine.runtime.MessageCorrelationBuilder;
@@ -349,23 +349,23 @@ public class MessageCorrelationMockExample {
 
 ## Stubbing and verifying access to CIB seven Java API services to access process variables 
 
-If you use [camunda-bpm-data](https://github.com/holunda-io/camunda-bpm-data/) library to access process variables, you might 
+If you use [cibseven-bpm-data](https://github.com/cibseven-community-hub/cibseven-bpm-data/) library to access process variables, you might 
 want to test that access. If you are testing `DelegateTask` or `DelegateExecution` code, the examples above already gives you
 possibilities to do so. If your code relies on direct access to CIB seven Java API services (`RuntimeService`, `TaskService` and
 `CaseService`) you might need to stub them and verify with the help of `ServiceExpressions` helper:
 
 ```java
-package org.camunda.community.mockito;
+package org.cibseven.community.mockito;
 
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.cibseven.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.RuntimeService;
 import org.cibseven.community.mockito.ServiceExpressions;
 import org.junit.Test;
 
 import java.util.UUID;
 
-import static io.holunda.camunda.bpm.data.CamundaBpmData.booleanVariable;
-import static io.holunda.camunda.bpm.data.CamundaBpmData.stringVariable;
+import static org.cibseven.community.cibseven.bpm.data.CamundaBpmData.booleanVariable;
+import static org.cibseven.community.cibseven.bpm.data.CamundaBpmData.stringVariable;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 
@@ -418,7 +418,7 @@ public class RuntimeServiceAwareServiceTest {
 
 ## Release Notes
 
-see https://cibseven.github.io/cibseven-mockito/release-notes/
+see https://github.com/cibseven-community-hub/cibseven-mockito/release-notes/
 
 ### Release Process
 
@@ -450,9 +450,7 @@ This might and probably will change with future versions, it just has to be impl
 
 * [Jan Galinski](https://github.com/jangalinski)
 * [Simon Zambrovski](https://github.com/zambrovski)
-* ??
   
 ## License
 
 * [Apache License, Version 2.0](./LICENSE)
-
