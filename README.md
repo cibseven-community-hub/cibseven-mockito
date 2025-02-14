@@ -18,7 +18,7 @@
 - [Delegate&#91;Task|Execution&#93;Fake](#delegatetaskexecutionfake)
 - [Mocking of external subprocesses](#mocking-of-external-subprocesses)
 - [Mocking of message correlation builder](#mocking-of-message-correlation-builder)
-- [Stubbing and verifying access to Camunda Java API services to access process variables](#stubbing-and-verifying-access-to-camunda-java-api-services-to-access-process-variables)
+- [Stubbing and verifying access to CIB seven Java API services to access process variables](#stubbing-and-verifying-access-to-camunda-java-api-services-to-access-process-variables)
 - [Release Notes](#release-notes)
   - [Release Process](#release-process)
 - [Limitations](#limitations)
@@ -66,7 +66,7 @@ gradle (kts):
 
 Sometimes you want to test a Bean that uses the query API. Since the API is fluent, you would have to mock every single parameter call and let your service return the mocked query.
 
-With the QueryMocks extension, you can do all this in just one line of code, see [QueryMocksExample.java](src/test/java/org/camunda/bpm/extension/mockito/QueryMocksExample.java).
+With the QueryMocks extension, you can do all this in just one line of code, see [QueryMocksExample.java](src/test/java/org/cibseven/mockito/QueryMocksExample.java).
 
 ```java
   public class QueryMocksExample {
@@ -274,7 +274,7 @@ ProcessExpressions
   .deploy(rule);
 ```
 
-More examples could be found in the following class [`CallActivityMockExampleTest`](src/test/java/org/camunda/community/mockito/CallActivityMockExampleTest.java).
+More examples could be found in the following class [`CallActivityMockExampleTest`](src/test/java/org/cibseven/mockito/CallActivityMockExampleTest.java).
 
 ## Mocking of message correlation builder
 
@@ -357,15 +357,15 @@ possibilities to do so. If your code relies on direct access to CIB seven Java A
 ```java
 package org.cibseven.community.mockito;
 
-import org.cibseven.community.cibseven.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.RuntimeService;
 import org.cibseven.community.mockito.ServiceExpressions;
 import org.junit.Test;
 
 import java.util.UUID;
 
-import static org.cibseven.community.cibseven.bpm.data.CamundaBpmData.booleanVariable;
-import static org.cibseven.community.cibseven.bpm.data.CamundaBpmData.stringVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.booleanVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.stringVariable;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 
