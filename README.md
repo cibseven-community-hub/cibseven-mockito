@@ -66,7 +66,7 @@ gradle (kts):
 
 Sometimes you want to test a Bean that uses the query API. Since the API is fluent, you would have to mock every single parameter call and let your service return the mocked query.
 
-With the QueryMocks extension, you can do all this in just one line of code, see [QueryMocksExample.java](src/test/java/org/cibseven/mockito/QueryMocksExample.java).
+With the QueryMocks extension, you can do all this in just one line of code, see [QueryMocksExample.java](src/test/java/org/cibseven/community/mockito/QueryMocksExample.java).
 
 ```java
   public class QueryMocksExample {
@@ -274,7 +274,7 @@ ProcessExpressions
   .deploy(rule);
 ```
 
-More examples could be found in the following class [`CallActivityMockExampleTest`](src/test/java/org/cibseven/mockito/CallActivityMockExampleTest.java).
+More examples could be found in the following class [`CallActivityMockExampleTest`](src/test/java/org/cibseven/community/mockito/CallActivityMockExampleTest.java).
 
 ## Mocking of message correlation builder
 
