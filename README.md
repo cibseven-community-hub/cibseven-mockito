@@ -442,8 +442,8 @@ This might and probably will change with future versions, it just has to be impl
 
 ## Resources
 
-* [Issue Tracker](https://github.com/cibseven/cibseven-mockito/issues)
-* [Contributing](https://github.com/cibseven/cibseven-mockito/blob/master/CONTRIBUTING.md) 
+* [Issue Tracker](https://github.com/cibseven-community-hub/cibseven-mockito/issues)
+* [Contributing](https://github.com/cibseven-community-hub/cibseven-mockito/blob/master/CONTRIBUTING.md) 
 * [openhub](https://www.openhub.net/p/cibseven-bpm-mockito)
 
 ## Maintainer
