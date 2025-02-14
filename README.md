@@ -1,18 +1,9 @@
-# camunda-platform-7-mockito
+# cibseven-mockito
 
-[![](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/camunda-community-hub/community)
-[![Camunda 7.22](https://img.shields.io/badge/Camunda%20Version-7.22-orange.svg)]([https://github.com/holisticon#open-source-lifecycle](https://docs.camunda.org/manual/7.22/))
-![](https://img.shields.io/badge/Compatible%20with-Camunda%20Platform%207-26d07c)
-[![](https://img.shields.io/badge/Lifecycle-Stable-brightgreen)](https://github.com/Camunda-Community-Hub/community/blob/main/extension-lifecycle.md#stable-)
+[![](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/cibseven-community-hub/community)
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.camunda.community.mockito/camunda-platform-7-mockito/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.camunda.community.mockito/camunda-platform-7-mockito)
-[![codecov](https://codecov.io/gh/camunda/camunda-platform-7-mockito/branch/master/graph/badge.svg)](https://codecov.io/gh/camunda/camunda-platform-7-mockito) 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.mockito/cibseven-mockito/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.mockito/cibseven-mockito)
 [![Apache License V.2](https://img.shields.io/badge/license-Apache%20V.2-blue.svg)](./LICENSE)
-
-| Important                                                                                                                                                                            |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| With camunda 8 released, we renamed this extension to clarify that it is only supposed to work with the Camunda BPM 7 platform, beginning with 6.17.x the maven coordinates changed!  This will also require that you change your imports to `org.camunda.community.mockito`. We are sorry for the inconvenience. |
-
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -27,7 +18,7 @@
 - [Delegate&#91;Task|Execution&#93;Fake](#delegatetaskexecutionfake)
 - [Mocking of external subprocesses](#mocking-of-external-subprocesses)
 - [Mocking of message correlation builder](#mocking-of-message-correlation-builder)
-- [Stubbing and verifying access to Camunda Java API services to access process variables](#stubbing-and-verifying-access-to-camunda-java-api-services-to-access-process-variables)
+- [Stubbing and verifying access to CIB seven Java API services to access process variables](#stubbing-and-verifying-access-to-camunda-java-api-services-to-access-process-variables)
 - [Release Notes](#release-notes)
   - [Release Process](#release-process)
 - [Limitations](#limitations)
@@ -39,7 +30,7 @@
 
 **simplify process mocking and testing**
 
-camunda-platform-7-mockito is a community extension for the Camunda BPM process engine that aims to simplify and 
+cibseven-mockito is a community extension for the CIB seven BPM process engine that aims to simplify and 
 automate mocking of process applications.
 
 **Features:**
@@ -53,21 +44,21 @@ automate mocking of process applications.
 
 ## Get started
 
-Just include camunda-platform-7-mockito in the test scope of your project:
+Just include cibseven-mockito in the test scope of your project:
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.mockito</groupId>
-  <artifactId>camunda-platform-7-mockito</artifactId>
+  <groupId>org.cibseven.community.mockito</groupId>
+  <artifactId>cibseven-mockito</artifactId>
   <scope>test</scope>
-  <version>7.22.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
 gradle (kts):
 
 ```kotlin
-   testImplementation("org.camunda.community.mockito:camunda-platform-7-mockito:7.22.0")
+   testImplementation("org.cibseven.community.mockito:cibseven-mockito:1.1.0")
 ```
 
 
@@ -75,7 +66,7 @@ gradle (kts):
 
 Sometimes you want to test a Bean that uses the query API. Since the API is fluent, you would have to mock every single parameter call and let your service return the mocked query.
 
-With the QueryMocks extension, you can do all this in just one line of code, see [QueryMocksExample.java](src/test/java/org/camunda/bpm/extension/mockito/QueryMocksExample.java).
+With the QueryMocks extension, you can do all this in just one line of code, see [QueryMocksExample.java](src/test/java/org/cibseven/community/mockito/QueryMocksExample.java).
 
 ```java
   public class QueryMocksExample {
@@ -283,12 +274,12 @@ ProcessExpressions
   .deploy(rule);
 ```
 
-More examples could be found in the following class [`CallActivityMockExampleTest`](src/test/java/org/camunda/community/mockito/CallActivityMockExampleTest.java).
+More examples could be found in the following class [`CallActivityMockExampleTest`](src/test/java/org/cibseven/community/mockito/CallActivityMockExampleTest.java).
 
 ## Mocking of message correlation builder
 
 Sometimes you have services or delegates responsible for the execution of message correlation 
-with your process engine. Camunda provides a fluent builder API for creation a message correlation
+with your process engine. CIB seven provides a fluent builder API for creation a message correlation
 and running it.
 
 ``` java
@@ -319,10 +310,11 @@ class MyCorrelator {
 In order to test those, you can use the following helper:
 
 ```java
-package org.camunda.community.mockito;
+package org.cibseven.community.mockito;
 
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.runtime.MessageCorrelationBuilder;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.runtime.MessageCorrelationBuilder;
+import org.cibseven.community.mockito.ProcessExpressions;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
@@ -355,25 +347,25 @@ public class MessageCorrelationMockExample {
 }
 ```
 
-## Stubbing and verifying access to Camunda Java API services to access process variables 
+## Stubbing and verifying access to CIB seven Java API services to access process variables 
 
-If you use [camunda-bpm-data](https://github.com/holunda-io/camunda-bpm-data/) library to access process variables, you might 
+If you use [cibseven-bpm-data](https://github.com/cibseven-community-hub/cibseven-bpm-data/) library to access process variables, you might 
 want to test that access. If you are testing `DelegateTask` or `DelegateExecution` code, the examples above already gives you
-possibilities to do so. If your code relies on direct access to Camunda Java API services (`RuntimeService`, `TaskService` and
+possibilities to do so. If your code relies on direct access to CIB seven Java API services (`RuntimeService`, `TaskService` and
 `CaseService`) you might need to stub them and verify with the help of `ServiceExpressions` helper:
 
 ```java
-package org.camunda.community.mockito;
+package org.cibseven.community.mockito;
 
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.community.mockito.ServiceExpressions;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.community.mockito.ServiceExpressions;
 import org.junit.Test;
 
 import java.util.UUID;
 
-import static io.holunda.camunda.bpm.data.CamundaBpmData.booleanVariable;
-import static io.holunda.camunda.bpm.data.CamundaBpmData.stringVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.booleanVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.stringVariable;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 
@@ -389,9 +381,9 @@ public class RuntimeServiceAwareServiceTest {
     final RuntimeService runtimeService = mock(RuntimeService.class);
     // stub access
     ServiceExpressions.runtimeServiceVariableStubBuilder(runtimeService)
-                      .defineAndInitializeLocal(ORDER_ID, "initial-Value")
-                      .define(ORDER_FLAG)
-                      .build();
+      .defineAndInitializeLocal(ORDER_ID, "initial-Value")
+      .define(ORDER_FLAG)
+      .build();
     // setup service
     final RuntimeServiceAwareService serviceUnderTest = new RuntimeServiceAwareService(runtimeService);
     // setup verifier
@@ -411,7 +403,7 @@ public class RuntimeServiceAwareServiceTest {
     assertThat(orderFlag).isEqualTo(true);
 
     // verify service access
-    verifier.verifySetLocal(ORDER_ID, "4712", executionId );
+    verifier.verifySetLocal(ORDER_ID, "4712", executionId);
     verifier.verifyGetLocal(ORDER_ID, executionId);
     verifier.verifyGetVariables(executionId, times(2));
     verifier.verifySet(ORDER_FLAG, true, executionId);
@@ -426,7 +418,7 @@ public class RuntimeServiceAwareServiceTest {
 
 ## Release Notes
 
-see https://camunda.github.io/camunda-platform-7-mockito/release-notes/
+see https://github.com/cibseven-community-hub/cibseven-mockito/release-notes/
 
 ### Release Process
 
@@ -434,7 +426,7 @@ see https://camunda.github.io/camunda-platform-7-mockito/release-notes/
 * close the milestone to generate a github-release draft, containing all changes
 * publish the github-release (mark as latest release)
 * watch the actions/release pipeline
-* file an issue mentioning camundacommunity/devrel and mark issue with `waitingforcamunda``
+* file an issue mentioning cibsevencommunity/devrel and mark issue with `waitingforcibseven``
 * fingers crossed
 
 
@@ -450,17 +442,15 @@ This might and probably will change with future versions, it just has to be impl
 
 ## Resources
 
-* [Issue Tracker](https://github.com/camunda/camunda-platform-7-mockito/issues)
-* [Contributing](https://github.com/camunda/camunda-platform-7-mockito/blob/master/CONTRIBUTING.md) 
-* [openhub](https://www.openhub.net/p/camunda-bpm-mockito)
+* [Issue Tracker](https://github.com/cibseven-community-hub/cibseven-mockito/issues)
+* [Contributing](https://github.com/cibseven-community-hub/cibseven-mockito/blob/master/CONTRIBUTING.md) 
+* [openhub](https://www.openhub.net/p/cibseven-bpm-mockito)
 
 ## Maintainer
 
 * [Jan Galinski](https://github.com/jangalinski)
 * [Simon Zambrovski](https://github.com/zambrovski)
-* ??
   
 ## License
 
 * [Apache License, Version 2.0](./LICENSE)
-
