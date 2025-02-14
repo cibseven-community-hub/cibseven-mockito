@@ -1,8 +1,8 @@
 package org.cibseven.community.mockito.task;
 
-import io.holunda.camunda.bpm.data.CamundaBpmData;
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
-import io.holunda.camunda.bpm.data.reader.VariableReader;
+import org.cibseven.community.bpm.data.CamundaBpmData;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.reader.VariableReader;
 import org.cibseven.bpm.engine.variable.Variables;
 import org.junit.Test;
 

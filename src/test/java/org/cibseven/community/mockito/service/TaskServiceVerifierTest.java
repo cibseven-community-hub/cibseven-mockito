@@ -1,7 +1,7 @@
 package org.cibseven.community.mockito.service;
 
-import io.holunda.camunda.bpm.data.CamundaBpmData;
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.CamundaBpmData;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.TaskService;
 import org.cibseven.bpm.engine.variable.VariableMap;
 import org.cibseven.community.mockito.ServiceExpressions;
@@ -11,7 +11,7 @@ import org.junit.Test;
 
 import java.util.UUID;
 
-import static io.holunda.camunda.bpm.data.CamundaBpmData.stringVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.stringVariable;
 import static org.mockito.Mockito.*;
 
 public class TaskServiceVerifierTest {

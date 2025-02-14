@@ -1,6 +1,6 @@
 package org.cibseven.community.mockito.verify;
 
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.RuntimeService;
 import org.mockito.Mockito;
 import org.mockito.verification.VerificationMode;

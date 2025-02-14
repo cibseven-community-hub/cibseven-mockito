@@ -1,8 +1,8 @@
 package org.cibseven.community.mockito.delegate;
 
 
-import io.holunda.camunda.bpm.data.CamundaBpmData;
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.CamundaBpmData;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.variable.VariableMap;
 import org.cibseven.bpm.engine.variable.Variables;
 import org.cibseven.bpm.engine.variable.value.StringValue;

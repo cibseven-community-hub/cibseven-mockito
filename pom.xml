@@ -10,7 +10,7 @@
 
   <groupId>org.cibseven.community.mockito</groupId>
   <artifactId>cibseven-platform-7-mockito</artifactId>
-  <version>1.1.1-SNAPSHOT</version>
+  <version>1.1.0</version>
 
   <properties>
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
@@ -19,7 +19,7 @@
     <java.version>${version.java}</java.version>
 
     <cibseven.version>1.1.0</cibseven.version>
-    <cibseven-bpm-data.version>1.6.1-SNAPSHOT</cibseven-bpm-data.version>
+    <cibseven-bpm-data.version>1.0.0</cibseven-bpm-data.version>
 
     <commons-lang3.version>3.17.0</commons-lang3.version>
     <slf4j.version>2.0.16</slf4j.version>
@@ -60,7 +60,7 @@
     </dependency>
 
     <dependency>
-      <groupId>org.cibseven.community</groupId>
+      <groupId>org.cibseven.community.data</groupId>
       <artifactId>cibseven-bpm-data</artifactId>
       <version>${cibseven-bpm-data.version}</version>
     </dependency>
@@ -236,6 +236,7 @@
       <organizationUrl>http://holisticon.de</organizationUrl>
     </developer>
   </developers>
+
   <profiles>
     <profile>
       <id>community-action-maven-release</id>

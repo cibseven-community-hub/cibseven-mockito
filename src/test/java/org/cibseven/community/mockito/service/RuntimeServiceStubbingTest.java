@@ -1,6 +1,6 @@
 package org.cibseven.community.mockito.service;
 
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.RuntimeService;
 import org.cibseven.community.mockito.ServiceExpressions;
 import org.cibseven.community.mockito.verify.RuntimeServiceVerification;
@@ -8,8 +8,8 @@ import org.junit.Test;
 
 import java.util.UUID;
 
-import static io.holunda.camunda.bpm.data.CamundaBpmData.booleanVariable;
-import static io.holunda.camunda.bpm.data.CamundaBpmData.stringVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.booleanVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.stringVariable;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;

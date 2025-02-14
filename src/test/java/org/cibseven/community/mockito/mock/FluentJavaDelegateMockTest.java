@@ -1,7 +1,7 @@
 package org.cibseven.community.mockito.mock;
 
-import io.holunda.camunda.bpm.data.CamundaBpmData;
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.CamundaBpmData;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.delegate.BpmnError;
 import org.cibseven.community.mockito.DelegateExpressions;
 import org.cibseven.community.mockito.delegate.DelegateExecutionFake;

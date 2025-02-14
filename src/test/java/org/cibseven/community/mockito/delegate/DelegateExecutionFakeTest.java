@@ -1,12 +1,12 @@
 package org.cibseven.community.mockito.delegate;
 
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.runtime.Incident;
 import org.cibseven.bpm.engine.variable.Variables;
 import org.cibseven.community.mockito.CamundaMockito;
 import org.junit.Test;
 
-import static io.holunda.camunda.bpm.data.CamundaBpmData.stringVariable;
+import static org.cibseven.community.bpm.data.CamundaBpmData.stringVariable;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class DelegateExecutionFakeTest {

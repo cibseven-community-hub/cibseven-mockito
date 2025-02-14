@@ -1,6 +1,6 @@
 package org.cibseven.community.mockito.service;
 
-import io.holunda.camunda.bpm.data.factory.VariableFactory;
+import org.cibseven.community.bpm.data.factory.VariableFactory;
 import org.cibseven.bpm.engine.CaseService;
 import org.cibseven.bpm.engine.variable.VariableMap;
 
