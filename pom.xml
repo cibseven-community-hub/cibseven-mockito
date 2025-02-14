@@ -2,17 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda.community</groupId>
-    <artifactId>community-hub-release-parent</artifactId>
-    <version>2.1.0</version>
+    <groupId>org.cibseven.community</groupId>
+    <artifactId>release-parent</artifactId>
+    <version>1.0.0</version>
     <relativePath />
   </parent>
 
-  <groupId>org.camunda.community.mockito</groupId>
-  <artifactId>camunda-platform-7-mockito</artifactId>
-  <version>7.24.3-SNAPSHOT</version>
-  <name>camunda-platform-7-mockito</name>
-  <description>Supports various mocking strategies in camunda 7 process tests.</description>
+  <groupId>org.cibseven.community.mockito</groupId>
+  <artifactId>cibseven-mockito</artifactId>
+  <version>1.2.0-SNAPSHOT</version>
 
   <properties>
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
@@ -20,8 +18,8 @@
     <version.java>17</version.java>
     <java.version>${version.java}</java.version>
 
-    <camunda.version>7.24.0</camunda.version>
-    <camunda-bpm-data.version>2025.10.1</camunda-bpm-data.version>
+    <cibseven.version>1.1.0</cibseven.version>
+    <cibseven-bpm-data.version>1.0.0</cibseven-bpm-data.version>
 
     <commons-lang3.version>3.20.0</commons-lang3.version>
     <slf4j.version>2.0.17</slf4j.version>
@@ -42,26 +40,12 @@
     <additionalparam>-Xdoclint:none</additionalparam>
   </properties>
 
-  <!-- Inform users that this artifact has been relocated to new Maven coordinates. -->
-  <distributionManagement>
-    <relocation>
-      <groupId>io.holunda.c7</groupId>
-      <artifactId>c7-mockito</artifactId>
-      <version>2025.12.1</version>
-      <message>
-        This artifact has moved: please use io.holunda.c7:c7-mockito.
-        The org.camunda.community.mockito:camunda-platform-7-mockito 7.24.x line is final; update your dependency coordinates.
-        See https://github.com/holunda-io/c7 for the new location.
-      </message>
-    </relocation>
-  </distributionManagement>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.camunda.bpm</groupId>
-        <artifactId>camunda-bom</artifactId>
-        <version>${camunda.version}</version>
+        <groupId>org.cibseven.bpm</groupId>
+        <artifactId>cibseven-bom</artifactId>
+        <version>${cibseven.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -70,15 +54,15 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.camunda.bpm</groupId>
-      <artifactId>camunda-engine</artifactId>
+      <groupId>org.cibseven.bpm</groupId>
+      <artifactId>cibseven-engine</artifactId>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>io.holunda.data</groupId>
-      <artifactId>camunda-bpm-data</artifactId>
-      <version>${camunda-bpm-data.version}</version>
+      <groupId>org.cibseven.community.data</groupId>
+      <artifactId>cibseven-bpm-data</artifactId>
+      <version>${cibseven-bpm-data.version}</version>
     </dependency>
 
     <dependency>
@@ -180,7 +164,7 @@
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <scope>provided</scope>
-      <version>2.4.240</version>
+      <version>2.3.232</version>
     </dependency>
   </dependencies>
 
@@ -234,13 +218,21 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:camunda-community-hub/camunda-platform-7-mockito.git</connection>
-    <url>scm:git:git@github.com:camunda-community-hub/camunda-platform-7-mockito.git</url>
-    <developerConnection>scm:git:git@github.com:camunda-community-hub/camunda-platform-7-mockito.git</developerConnection>
+    <connection>scm:git:git@github.com:cibseven-community-hub/cibseven-mockito.git</connection>
+    <url>scm:git:git@github.com:cibseven-community-hub/cibseven-mockito.git</url>
+    <developerConnection>scm:git:git@github.com:cibseven-community-hub/cibseven-mockito.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
   <developers>
+    <developer>
+      <id>cibseven.org</id>
+      <name>CIB seven Community</name>
+      <email>community@cibseven.org</email>
+      <url>http://cibseven.org</url>
+      <organization>cibseven.org</organization>
+      <organizationUrl>http://cibseven.org</organizationUrl>
+    </developer>
     <developer>
       <name>Jan Galinski</name>
       <organization>Holisticon AG</organization>
@@ -252,34 +244,13 @@
       <organizationUrl>http://holisticon.de</organizationUrl>
     </developer>
   </developers>
-  <profiles>
-    <profile>
-      <id>community-action-maven-release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>3.2.8</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <!-- Prevent gpg from using pinentry programs -->
-              <gpgArguments>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+
+  <repositories>
+    <repository>
+      <id>mvn-cibseven-public</id>
+      <name>CIB seven Public Repository</name>
+      <url>https://artifacts.cibseven.org/repository/public</url>
+    </repository>
+  </repositories>
+
 </project>
