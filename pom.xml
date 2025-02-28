@@ -12,10 +12,6 @@
   <artifactId>cibseven-mockito</artifactId>
   <version>1.1.0</version>
 
-  <name>${project.artifactId}</name>
-  <description>CIB seven Mockito</description>
-  <url>https://github.com/cibseven-community-hub/cibseven-mockito/</url>
-
   <properties>
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -60,7 +56,6 @@
     <dependency>
       <groupId>org.cibseven.bpm</groupId>
       <artifactId>cibseven-engine</artifactId>
-      <version>${cibseven.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -168,8 +163,8 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>2.3.232</version>
       <scope>provided</scope>
+      <version>2.3.232</version>
     </dependency>
   </dependencies>
 
@@ -249,5 +244,13 @@
       <organizationUrl>http://holisticon.de</organizationUrl>
     </developer>
   </developers>
+
+  <repositories>
+    <repository>
+      <id>mvn-cibseven-public</id>
+      <name>CIB seven Public Repository</name>
+      <url>https://artifacts.cibseven.org/repository/public</url>
+    </repository>
+  </repositories>
 
 </project>
