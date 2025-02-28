@@ -226,6 +226,14 @@
 
   <developers>
     <developer>
+      <id>cibseven.org</id>
+      <name>CIB seven Community</name>
+      <email>community@cibseven.org</email>
+      <url>http://cibseven.org</url>
+      <organization>cibseven.org</organization>
+      <organizationUrl>http://cibseven.org</organizationUrl>
+    </developer>
+    <developer>
       <name>Jan Galinski</name>
       <organization>Holisticon AG</organization>
       <organizationUrl>http://holisticon.de</organizationUrl>
@@ -237,34 +245,12 @@
     </developer>
   </developers>
 
-  <profiles>
-    <profile>
-      <id>community-action-maven-release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>3.2.7</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <!-- Prevent gpg from using pinentry programs -->
-              <gpgArguments>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+  <repositories>
+    <repository>
+      <id>mvn-cibseven-public</id>
+      <name>CIB seven Public Repository</name>
+      <url>https://artifacts.cibseven.org/repository/public</url>
+    </repository>
+  </repositories>
+
 </project>
