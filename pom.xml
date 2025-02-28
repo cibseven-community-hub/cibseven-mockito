@@ -12,10 +12,6 @@
   <artifactId>cibseven-mockito</artifactId>
   <version>1.1.0</version>
 
-  <name>${project.artifactId}</name>
-  <description>CIB seven Mockito</description>
-  <url>https://github.com/cibseven-community-hub/cibseven-mockito/</url>
-
   <properties>
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -60,7 +56,6 @@
     <dependency>
       <groupId>org.cibseven.bpm</groupId>
       <artifactId>cibseven-engine</artifactId>
-      <version>${cibseven.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -168,8 +163,8 @@
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>2.3.232</version>
       <scope>provided</scope>
+      <version>2.3.232</version>
     </dependency>
   </dependencies>
 
@@ -231,14 +226,6 @@
 
   <developers>
     <developer>
-      <id>cibseven.org</id>
-      <name>CIB seven Community</name>
-      <email>community@cibseven.org</email>
-      <url>http://cibseven.org</url>
-      <organization>cibseven.org</organization>
-      <organizationUrl>http://cibseven.org</organizationUrl>
-    </developer>
-    <developer>
       <name>Jan Galinski</name>
       <organization>Holisticon AG</organization>
       <organizationUrl>http://holisticon.de</organizationUrl>
@@ -250,4 +237,34 @@
     </developer>
   </developers>
 
+  <profiles>
+    <profile>
+      <id>community-action-maven-release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>3.2.7</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <!-- Prevent gpg from using pinentry programs -->
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
