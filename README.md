@@ -1,9 +1,7 @@
 # cibseven-mockito
 
-[![](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/cibseven-community-hub/community)
-
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.mockito/cibseven-mockito/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.mockito/cibseven-mockito)
-[![Apache License V.2](https://img.shields.io/badge/license-Apache%20V.2-blue.svg)](./LICENSE)
+[![CIB seven 1.1.0](https://img.shields.io/badge/CIB%20seven-1.1.0-orange.svg)](https://docs.cibseven.org/manual/1.1/)
+[![Maven Central](https://img.shields.io/maven-central/v/org.cibseven.community.mockito/cibseven-mockito?label=Maven%20Central)](https://central.sonatype.com/artifact/org.cibseven.community.mockito/cibseven-mockito)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
