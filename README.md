@@ -18,7 +18,7 @@
 - [Delegate&#91;Task|Execution&#93;Fake](#delegatetaskexecutionfake)
 - [Mocking of external subprocesses](#mocking-of-external-subprocesses)
 - [Mocking of message correlation builder](#mocking-of-message-correlation-builder)
-- [Stubbing and verifying access to CIB seven Java API services to access process variables](#stubbing-and-verifying-access-to-camunda-java-api-services-to-access-process-variables)
+- [Stubbing and verifying access to CIB seven Java API services to access process variables](#stubbing-and-verifying-access-to-cib-seven-java-api-services-to-access-process-variables)
 - [Release Notes](#release-notes)
   - [Release Process](#release-process)
 - [Limitations](#limitations)
