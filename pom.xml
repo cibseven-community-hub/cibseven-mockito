@@ -263,3 +263,43 @@
   </repositories>
 
 </project>
+
+    <developerConnection>scm:git:git@github.com:cibseven-community-hub/cibseven-mockito.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>cibseven.org</id>
+      <name>CIB seven Community</name>
+      <email>community@cibseven.org</email>
+      <url>http://cibseven.org</url>
+      <organization>cibseven.org</organization>
+      <organizationUrl>http://cibseven.org</organizationUrl>
+    </developer>
+    <developer>
+      <name>Jan Galinski</name>
+      <organization>Holisticon AG</organization>
+      <organizationUrl>http://holisticon.de</organizationUrl>
+    </developer>
+    <developer>
+      <name>Simon Zambrovski</name>
+      <organization>Holisticon AG</organization>
+      <organizationUrl>http://holisticon.de</organizationUrl>
+    </developer>
+  </developers>
+
+  <repositories>
+    <repository>
+      <id>mvn-cibseven-community</id>
+      <name>CIB seven Community Repository</name>
+      <url>https://artifacts.cibseven.org/repository/community</url>
+    </repository>
+    <repository>
+      <id>mvn-cibseven-community-snapshots</id>
+      <name>CIB seven Community Snapshots Repository</name>
+      <url>https://artifacts.cibseven.org/repository/community-snapshots</url>
+    </repository>
+  </repositories>
+
+</project>
