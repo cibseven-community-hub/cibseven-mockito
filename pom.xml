@@ -11,6 +11,8 @@
   <groupId>org.cibseven.community.mockito</groupId>
   <artifactId>cibseven-mockito</artifactId>
   <version>2.1.0-SNAPSHOT</version>
+  <name>cibseven-mockito</name>
+  <description>Supports various mocking strategies in cibseven 2 process tests.</description>
 
   <properties>
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
