@@ -23,7 +23,7 @@
     <cibseven.version>2.1.0-SNAPSHOT</cibseven.version>
     <cibseven-bpm-data.version>2.1.0-SNAPSHOT</cibseven-bpm-data.version>
 
-    <commons-lang3.version>3.19.0</commons-lang3.version>
+    <commons-lang3.version>3.20.0</commons-lang3.version>
     <slf4j.version>2.0.17</slf4j.version>
     <spring.version>6.2.14</spring.version>
 
