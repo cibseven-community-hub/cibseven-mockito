@@ -10,6 +10,7 @@ public class ProcessInstanceFake implements ProcessInstance {
   private final String rootProcessInstanceId;
 
   private final String processDefinitionId;
+  private final String processDefinitionKey;
   private final String tenantId;
   private final String caseInstanceId;
 
@@ -20,13 +21,14 @@ public class ProcessInstanceFake implements ProcessInstance {
     return new ProcessInstanceFakeBuilder();
   }
 
-  ProcessInstanceFake(String id, String businessKey, String processInstanceId, String rootProcessInstanceId, String processDefinitionId,
+  ProcessInstanceFake(String id, String businessKey, String processInstanceId, String rootProcessInstanceId, String processDefinitionId, String processDefinitionKey,
                       String tenantId, String caseInstanceId, boolean ended, boolean suspended) {
     this.id = id;
     this.businessKey = businessKey;
     this.processInstanceId = processInstanceId;
     this.rootProcessInstanceId = rootProcessInstanceId;
     this.processDefinitionId = processDefinitionId;
+    this.processDefinitionKey = processDefinitionKey;
     this.tenantId = tenantId;
     this.caseInstanceId = caseInstanceId;
     this.ended = ended;
@@ -37,6 +39,11 @@ public class ProcessInstanceFake implements ProcessInstance {
   @Override
   public String getProcessDefinitionId() {
     return processDefinitionId;
+  }
+
+  @Override
+  public String getProcessDefinitionKey() {
+    return processDefinitionKey;
   }
 
   @Override
@@ -95,6 +102,7 @@ public class ProcessInstanceFake implements ProcessInstance {
       ", processInstanceId='" + processInstanceId + '\'' +
       ", rootProcessInstanceId='" + rootProcessInstanceId + '\'' +
       ", processDefinitionId='" + processDefinitionId + '\'' +
+      ", processDefinitionKey='" + processDefinitionKey + '\'' +
       ", tenantId='" + tenantId + '\'' +
       ", caseInstanceId='" + caseInstanceId + '\'' +
       ", ended=" + ended +
@@ -108,6 +116,7 @@ public class ProcessInstanceFake implements ProcessInstance {
     private String processInstanceId;
     private String rootProcessInstanceId;
     private String processDefinitionId;
+    private String processDefinitionKey;
     private String tenantId;
     private String caseInstanceId;
     private boolean ended = false;
@@ -131,6 +140,11 @@ public class ProcessInstanceFake implements ProcessInstance {
     public ProcessInstanceFakeBuilder processDefinitionId(String processDefinitionId) {
       this.processDefinitionId = processDefinitionId;
       return this;
+    }
+
+    public ProcessInstanceFakeBuilder processDefinitionKey(String processDefinitionKey) {
+        this.processDefinitionKey = processDefinitionKey;
+        return this;
     }
 
     public ProcessInstanceFakeBuilder tenantId(String tenantId) {
@@ -175,6 +189,7 @@ public class ProcessInstanceFake implements ProcessInstance {
         processInstanceId,
         rootProcessInstanceId,
         processDefinitionId,
+        processDefinitionKey,
         tenantId,
         caseInstanceId,
         ended,
@@ -183,4 +198,5 @@ public class ProcessInstanceFake implements ProcessInstance {
     }
 
   }
+
 }
