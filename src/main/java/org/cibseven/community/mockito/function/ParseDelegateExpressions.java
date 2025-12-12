@@ -1,13 +1,12 @@
 package org.cibseven.community.mockito.function;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
-import static org.cibseven.bpm.model.bpmn.impl.BpmnModelConstants.CAMUNDA_ATTRIBUTE_DELEGATE_EXPRESSION;
-import static org.cibseven.bpm.model.bpmn.impl.BpmnModelConstants.CAMUNDA_ELEMENT_EXECUTION_LISTENER;
-import static org.cibseven.bpm.model.bpmn.impl.BpmnModelConstants.CAMUNDA_ELEMENT_TASK_LISTENER;
+import static org.cibseven.bpm.model.bpmn.impl.BpmnModelConstants.*;
 
 import java.net.URL;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 
 import org.apache.commons.lang3.tuple.Pair;
@@ -17,6 +16,8 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import java.util.*;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * Parses a given BPMN File and returns a Set of all delegateExpression names.

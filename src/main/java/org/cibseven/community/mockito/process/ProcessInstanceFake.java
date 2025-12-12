@@ -97,7 +97,6 @@ public class ProcessInstanceFake implements ProcessInstance {
     return tenantId;
   }
 
-  @Override
   public String getProcessDefinitionKey() {
     return processDefinitionKey;
   }
