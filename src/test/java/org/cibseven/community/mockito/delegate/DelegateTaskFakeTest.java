@@ -8,6 +8,8 @@ import org.cibseven.bpm.engine.delegate.DelegateTask;
 import org.cibseven.bpm.engine.delegate.TaskListener;
 import org.junit.Test;
 
+import java.util.Date;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.cibseven.bpm.engine.delegate.TaskListener.EVENTNAME_CREATE;
 import static org.cibseven.bpm.engine.task.IdentityLinkType.ASSIGNEE;
@@ -37,6 +39,14 @@ public class DelegateTaskFakeTest {
     assertThat(delegate.getDescription()).isNull();
     delegate.setDescription("foo");
     assertThat(delegate.getDescription()).isEqualTo("foo");
+  }
+
+  @Test
+  public void setLastUpdated() {
+    assertThat(delegate.getLastUpdated()).isNull();
+    Date now = new Date();
+    delegate.withLastUpdated(now);
+    assertThat(delegate.getLastUpdated()).isEqualTo(now);
   }
 
   @Test
