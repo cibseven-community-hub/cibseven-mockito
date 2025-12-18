@@ -19,7 +19,7 @@ jobs:
           gpg-passphrase: MAVEN_CENTRAL_GPG_PASSPHRASE
 
       - name: Deploy SNAPSHOT / Release
-        uses: camunda-community-hub/community-action-maven-release@v1.2.2
+        uses: camunda-community-hub/community-action-maven-release@v1.2.3
         with:
           release-version: ${{ github.event.release.tag_name }}
           release-profile: community-action-maven-release
@@ -45,4 +45,4 @@ jobs:
           asset_content_type: application/zip
 
       - name: Run CodeCov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5

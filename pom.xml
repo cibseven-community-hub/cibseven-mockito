@@ -22,12 +22,12 @@
     <cibseven-bpm-data.version>2.1.0-SNAPSHOT</cibseven-bpm-data.version>
 
     <commons-lang3.version>3.17.0</commons-lang3.version>
-    <slf4j.version>2.0.16</slf4j.version>
-    <spring.version>6.1.14</spring.version>
+    <slf4j.version>2.0.17</slf4j.version>
+    <spring.version>6.2.6</spring.version>
 
     <!-- test tools -->
-    <assertj.version>3.27.2</assertj.version>
-    <mockito.version>5.15.2</mockito.version>
+    <assertj.version>3.27.3</assertj.version>
+    <mockito.version>5.17.0</mockito.version>
     <hamcrest.version>3.0</hamcrest.version>
 
     <!-- plugins -->
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
-      <version>2.13.0</version>
+      <version>2.14.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -191,7 +191,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.12</version>
+        <version>0.8.13</version>
         <executions>
           <execution>
             <goals>
