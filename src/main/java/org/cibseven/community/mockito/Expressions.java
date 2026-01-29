@@ -24,9 +24,10 @@ import org.slf4j.LoggerFactory;
  * {@link org.cibseven.bpm.engine.test.mock.Mocks#register(String, Object)} and
  * {@link org.cibseven.bpm.engine.test.mock.Mocks#get(Object)} in a type-safe
  * way.
- * <p/>
+ * <p>
  * When mocking JavaDelegate, ExecutionListener or TaskListener, use
  * {@link DelegateExpressions} instead.
+ * </p>
  */
 @SuppressWarnings("unused")
 public enum Expressions {
