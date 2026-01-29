@@ -12,6 +12,10 @@
   <artifactId>cibseven-mockito</artifactId>
   <version>2.0.0</version>
 
+  <name>CIB seven Mockito</name>
+  <description>Mockito testing support for CIB seven BPM engine</description>
+  <url>https://github.com/cibseven-community-hub/cibseven-mockito</url>
+
   <properties>
     <!-- Avoid the message "[WARNING] Using platform encoding (UTF-8 actually) ... also for the failsafe plugin -->
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
