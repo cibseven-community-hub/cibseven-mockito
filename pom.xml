@@ -22,8 +22,8 @@
     <version.java>17</version.java>
     <java.version>${version.java}</java.version>
 
-    <cibseven.version>2.0.0</cibseven.version>
-    <cibseven-bpm-data.version>2.0.0</cibseven-bpm-data.version>
+    <cibseven.version>2.1.0</cibseven.version>
+    <cibseven-bpm-data.version>2.1.0</cibseven-bpm-data.version>
 
     <commons-lang3.version>3.19.0</commons-lang3.version>
     <slf4j.version>2.0.17</slf4j.version>
