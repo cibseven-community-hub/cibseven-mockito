@@ -137,17 +137,19 @@ pipeline {
                     withMaven(options: []) {
                         withCredentials([file(credentialsId: 'credential-cibseven-community-gpg-private-key', variable: 'GPG_KEY_FILE'), string(credentialsId: 'credential-cibseven-community-gpg-passphrase', variable: 'GPG_KEY_PASS')]) {
                             sh "gpg --batch --import ${GPG_KEY_FILE}"
-    
+
                             def GPG_KEYNAME = sh(script: "gpg --list-keys --with-colons | grep pub | cut -d: -f5", returnStdout: true).trim()
 
-                            sh """
-                                mvn -T4 -U \
-                                    -Dgpg.keyname="${GPG_KEYNAME}" \
-                                    -Dgpg.passphrase="${GPG_KEY_PASS}" \
-                                    clean deploy \
-                                    -Psonatype-oss-release \
-                                    -Dskip.cibseven.release="${!params.DEPLOY_TO_ARTIFACTS}"
-                            """
+                            withEnv(["GPG_KEYNAME=${GPG_KEYNAME}"]) {
+                                sh '''
+                                    mvn -T4 -U \
+                                        -Dgpg.keyname="$GPG_KEYNAME" \
+                                        -Dgpg.passphrase="$GPG_KEY_PASS" \
+                                         clean deploy \
+                                        -Psonatype-oss-release \
+                                        -Dskip.cibseven.release="${!params.DEPLOY_TO_ARTIFACTS}"
+                                '''
+                            }
                         }
                     }
 
